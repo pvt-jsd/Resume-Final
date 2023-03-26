@@ -6244,7 +6244,7 @@ form {
     font-family: 'La Belle Aurore', cursive;
     color: #515152;
     font-size: 18px;
-    position: absolute;
+    position:absolute;
     bottom: 100%;
     left: -1rem
 }
@@ -6285,7 +6285,7 @@ form {
 }
 
 .contact-form ul li.submit {
-    overflow: hidden
+    overflow:
 }
 
 .contact-form ul li.half:first-child {
