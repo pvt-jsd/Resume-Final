@@ -190,7 +190,11 @@
           baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/",
           ext: ".png",
           svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/",
-          svgExt: ".svg"   
+          svgExt: ".svg",
+          source: {
+          concatemoji:
+            "https:\/\/jacekjeznach.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=7c24b08aaa6339a90ab8221df83ca89f",
+        },
         };
         !(function (e, a, t) {
           var n,
@@ -296,6 +300,36 @@
           padding: 0 !important;
         }
       </style>
+      <link
+      rel="stylesheet"
+      id="wp-pagenavi-css"
+      href="https://jacekjeznach.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="jj_theme-css"
+      href="https://jacekjeznach.com/wp-content/themes/new/style.css?ver=1.0"
+      type="text/css"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      src="https://jacekjeznach.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1"
+      id="jquery-core-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://jacekjeznach.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2"
+      id="jquery-migrate-js"
+    ></script>
+    <link rel="https://api.w.org/" href="https://jacekjeznach.com/wp-json/" />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="https://jacekjeznach.com/wp-json/wp/v2/pages/11"
+    />
       <meta name="cdp-version" content="1.2.3" />
       <script>
         var scriptsExecuted = !1,
@@ -355,8 +389,8 @@
       }
     </style>
     <script>
-        var url = "#";
-        var path = "#";
+        var url = "https://pvt-jsd.github.io/WebResume/";
+        var path = "https://pvt-jsd.github.io/WebResume/wp-content/themes/";
         var errmsg =
           '<div class="error-info animated fadeInUp"> <span><span>O</span>ops!</span> <p>Something went wrong, please refresh the page or try again later.</p> </div>';
         var msg1 = "Please fill in all required fields";
@@ -388,7 +422,7 @@
           class=""
         ></path></svg></a
     ><menu class="main-menu">
-      <a class="mbtn mbtn-cl" href="#main-menu__top">
+      <a class="mbtn mbtn-cl" href="">
         <svg
           aria-hidden="true"
           focusable="false"
@@ -408,7 +442,7 @@
       </a>
       <div class="main-menu__top">
         <!-- Yahan link daaln ahai -->
-        <a class="logo" rel="home" href="index.html">
+        <a class="logo" rel="home" href="">
           <svg
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
@@ -1047,6 +1081,94 @@ contactForm.addEventListener("submit", function(event) {
     <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="/wp-includes/js/jquery/wp-embed.min.js"></script>
     <script type="text/javascript" src="/wp-includes/js/jquery/wp-emoji-release.min.js"></script>
+    <div id="preloader" class="preloader">
+      <div class="inner">
+        <img
+          src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img/https://jacekjeznach.com/wp-content/themes/new/img/logopreload.png"
+          alt=" Front End Developer Loader"
+        />
+        <span>Japneet is thinking</span>
+        <div id="progress-bar" class="progress-bar">
+          <div id="progress-bar_bg" class="progress-bar_bg"><div></div></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var app = {};
+      app.ajax = null;
+
+      window.lazySizesConfig = window.lazySizesConfig || {};
+      lazySizesConfig.loadMode = 1;
+      lazySizesConfig.loadHidden = false;
+      window.lazySizesConfig.expand = 10; //default 360-500
+      lazySizesConfig.expFactor = 1.5; //default: 1.7
+
+      SystemJS.import(
+        "/wp-content/themes/js/main.js"
+      );
+    </script>
+    <script>
+      function loadJS(u) {
+        var r = document.getElementsByTagName("script")[0],
+          s = document.createElement("script");
+        s.src = u;
+        r.parentNode.insertBefore(s, r);
+      }
+
+      if (!window.HTMLPictureElement || document.msElementsFromPoint) {
+        loadJS(
+          "/wp-content/themes/js/vendor/ls.respimg.min.js"
+        );
+      }
+    </script>
+    <div id="cboxOverlay" style="display: none"></div>
+    <div
+      id="colorbox"
+      class=""
+      role="dialog"
+      tabindex="-1"
+      style="display: none"
+    >
+      <div id="cboxWrapper">
+        <div>
+          <div id="cboxTopLeft" style="float: left"></div>
+          <div id="cboxTopCenter" style="float: left"></div>
+          <div id="cboxTopRight" style="float: left"></div>
+        </div>
+        <div style="clear: left">
+          <div id="cboxMiddleLeft" style="float: left"></div>
+          <div id="cboxContent" style="float: left">
+            <div id="cboxTitle" style="float: left"></div>
+            <div id="cboxCurrent" style="float: left"></div>
+            <button type="button" id="cboxPrevious"></button
+            ><button type="button" id="cboxNext"></button
+            ><button id="cboxSlideshow"></button>
+            <div id="cboxLoadingOverlay" style="float: left"></div>
+            <div id="cboxLoadingGraphic" style="float: left"></div>
+          </div>
+          <div id="cboxMiddleRight" style="float: left"></div>
+        </div>
+        <div style="clear: left">
+          <div id="cboxBottomLeft" style="float: left"></div>
+          <div id="cboxBottomCenter" style="float: left"></div>
+          <div id="cboxBottomRight" style="float: left"></div>
+        </div>
+      </div>
+      <div
+        style="
+          position: absolute;
+          width: 9999px;
+          visibility: hidden;
+          display: none;
+          max-width: none;
+        "
+      ></div>
+    </div>
+    <script
+      src="/wp-content/themes/js/vendor/osciliator.js"
+      id="oscil"
+    ></script>
+
   <script>
     
 	// <![CDATA[  <-- For SVG support
